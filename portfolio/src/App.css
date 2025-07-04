@@ -1,0 +1,115 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Ensure main content is above the background */
+#root > * {
+  position: relative;
+  z-index: 1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #18181b 0%, #23272f 100%);
+  color: #fff;
+  min-height: 100vh;
+}
+
+section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.glass-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 1.5rem;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.glass-card:hover {
+  box-shadow: 0 16px 40px 0 rgba(31,38,135,0.25);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 4px 16px 0 rgba(255,107,107,0.15);
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+.btn-primary:hover {
+  box-shadow: 0 8px 32px 0 rgba(255,107,107,0.25);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff2;
+  font-weight: 600;
+  transition: background 0.3s, border 0.3s, transform 0.2s;
+}
+.btn-secondary:hover {
+  background: #fff1;
+  border: 2px solid #fff5;
+  transform: translateY(-2px) scale(1.04);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #23272f;
+}
+::-webkit-scrollbar-thumb {
+  background: #4ecdc4;
+  border-radius: 8px;
+}
