@@ -26,12 +26,12 @@ const projects = [
   },
   {
     icon: '🎨',
-    title: 'Portfolio Website',
-    description: 'A modern, responsive portfolio website with stunning animations and interactive elements built with vanilla JavaScript and GSAP.',
-    tags: ['HTML5', 'CSS3', 'JavaScript', 'GSAP'],
+    title: 'PW-SKILLS PROJECT',
+    description: 'MY STUDENT-TEACHER APPOINTMENT SYSTEM PROJECT FOR MY PW SKILLS INTERNSHIP',
+    tags: ['HTML5', 'CSS3', 'JavaScript', 'NODEJS', 'EXPRESS', 'MONGODB'],
     links: [
-      { label: 'Live Demo', href: '#' },
-      { label: 'GitHub', href: '#' },
+      { label: 'Live Demo', href: 'https://pw-skills-project.vercel.app/' },
+      { label: 'GitHub', href: 'https://github.com/devang9890/PW-SKILLS-Project' },
     ],
   },
   {

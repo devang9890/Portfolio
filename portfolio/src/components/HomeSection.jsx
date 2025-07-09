@@ -3,7 +3,6 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 import profileImg from '../assets/profile.jpg';
-import './HomeSection.css'; // We'll add custom CSS for neon glow
 
 const HomeSection = () => {
   const cardRef = useRef();

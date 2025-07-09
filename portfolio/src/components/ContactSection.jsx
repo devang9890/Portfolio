@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const socials = [
-  { icon: <FaEnvelope className="text-[#ea4335]" />, label: 'Email', href: 'https://www.devang9890@gmail.com' },
+  { icon: <FaEnvelope className="text-[#ea4335]" />, label: 'Email', href: 'mailto:devang9890@gmail.com' },
   { icon: <FaLinkedin className="text-[#0077b5]" />, label: 'LinkedIn', href: 'https://www.linkedin.com/in/devang-singh-258476284/' },
   { icon: <FaGithub className="text-[#333] dark:text-white" />, label: 'GitHub', href: 'https://github.com/devang9890' },
   { icon: <FaTwitter className="text-[#1da1f2]" />, label: 'Twitter', href: 'https://x.com/devang9890' },
