@@ -1,0 +1,92 @@
+.animatedBg {
+  background: linear-gradient(120deg, #18181b 0%, #23272f 50%, #18181b 100%);
+  animation: gradientMove 8s ease-in-out infinite alternate;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.neonText {
+  color: #00e6fb;
+  text-shadow: 0 0 8px #00e6fb, 0 0 24px #00e6fb80, 0 0 40px #00e6fb80;
+}
+
+.neonSub {
+  color: #4ecdc4;
+  text-shadow: 0 0 8px #4ecdc4, 0 0 16px #4ecdc480;
+}
+
+.glassCard {
+  background: rgba(255,255,255,0.08);
+  border: 1.5px solid rgba(255,255,255,0.15);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.25), 0 1.5px 8px 0 #00e6fb44;
+  backdrop-filter: blur(16px);
+  border-radius: 2rem;
+}
+
+.glowRing {
+  position: relative;
+  display: inline-block;
+}
+.glowRing::before {
+  content: '';
+  position: absolute;
+  top: -10px; left: -10px; right: -10px; bottom: -10px;
+  border-radius: 2rem;
+  background: conic-gradient(from 0deg, #00e6fb, #4ecdc4, #ff6b6b, #00e6fb);
+  filter: blur(8px);
+  z-index: 0;
+  animation: spinGlow 4s linear infinite;
+}
+@keyframes spinGlow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.gradientBtn {
+  background: linear-gradient(90deg, #00e6fb, #4ecdc4);
+  box-shadow: 0 4px 16px 0 #00e6fb44;
+  transition: background 0.3s, transform 0.2s;
+}
+.gradientBtn:hover {
+  background: linear-gradient(90deg, #4ecdc4, #00e6fb);
+  transform: scale(1.07);
+}
+
+.outlineBtn {
+  background: transparent;
+  border: 2px solid #ff6b6b;
+  color: #ff6b6b;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+.outlineBtn:hover {
+  background: #ff6b6b;
+  color: #fff;
+  transform: scale(1.07);
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid #fff;
+  width: 0;
+  display: inline-block;
+  animation: typewriter 2.5s steps(14) 0.5s forwards;
+  position: relative;
+}
+
+.cursor {
+  border-right: 0.15em solid #fff;
+  animation: blinkingCursor 0.8s steps(1) infinite;
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 14ch; }
+}
+
+@keyframes blinkingCursor {
+  0%, 100% { border-color: #fff; }
+  50% { border-color: transparent; }
+} 
